@@ -33,7 +33,7 @@ callApi()
 
 
 
-
+//card and elements
 poke_container.setAttribute('class','poke-container')
 
 const pokemon = document.createElement('div')
@@ -57,7 +57,7 @@ pokeType.setAttribute('class', 'type')
 const typeRes = document.createElement('span')
 
 
-
+//append elements
 poke_container.appendChild(pokemon)
 pokemon.appendChild(pokeImag);
 pokemon.appendChild(infoPokemon)
