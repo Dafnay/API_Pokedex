@@ -23,7 +23,7 @@ const callApi= async ()=>{
 		const response = await fetch('https://pokeapi.co/api/v2/pokemon');
 		console.log(response)
 		const data= await response.json();
-		console.log(data)
+		console.log(data.results)
 	}
 	catch(err){
 		console.log(err)
@@ -31,6 +31,40 @@ const callApi= async ()=>{
 }
 callApi()
 
-function createCard() {
-	
-}
+
+
+
+poke_container.setAttribute('class','poke-container')
+
+const pokemon = document.createElement('div')
+pokemon.setAttribute('class', 'pokemon')
+
+const pokeImag = document.createElement('img')
+pokeImag.setAttribute('class', 'img-container')
+
+const infoPokemon = document.createElement('div')
+infoPokemon.setAttribute('class','info')
+
+const numberPoke = document.createElement('span')
+numberPoke.setAttribute('class', 'number')
+
+const pokeName = document.createElement('h3')
+pokeName.setAttribute('class','name')
+
+const pokeType = document.createElement('small')
+pokeType.setAttribute('class', 'type')
+
+const typeRes = document.createElement('span')
+
+
+
+poke_container.appendChild(pokemon)
+pokemon.appendChild(pokeImag);
+pokemon.appendChild(infoPokemon)
+infoPokemon.appendChild(numberPoke)
+infoPokemon.appendChild(pokeName)
+infoPokemon.appendChild(PokeType)
+infoPokemon.appendChild(typeRes)
+
+
+
