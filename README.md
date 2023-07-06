@@ -1,7 +1,7 @@
 # API_Pokedex
 
 
-En esta práctica consumirás una API que contiene Pokemones. H
+En esta práctica consumirás una API que contiene Pokemones. 
 
 
 <ul>Objetivos pedagógicos:</ul>
